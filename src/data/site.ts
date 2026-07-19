@@ -55,6 +55,7 @@ export type Project = {
   period: string;
   description: string;
   stack: string;
+  href?: string;
 };
 
 export type AwardGroup = {
@@ -80,7 +81,7 @@ export const profile: Profile = {
   chineseName: "伍浩",
   title: "Software Engineering Undergraduate",
   affiliation: "Southeast University",
-  email: "lution@seu.edu.cn",
+  email: "haobits5@gmail.com",
   github: "https://github.com/River177",
   avatar: "/hao-wu.webp",
 };
@@ -109,6 +110,39 @@ export const news: NewsItem[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    title:
+      "HARC: Coupling Harmfulness and Refusal Directions for Robust Safety Alignment",
+    authors: "Shei Pern Chua, Hao Wu, Qianli Ma, Fangzhao Wu",
+    venue: "arXiv Preprint",
+    year: "2026",
+    summary:
+      "A safety alignment method that couples harmfulness and refusal directions across prompt and response positions.",
+    links: [
+      {
+        label: "arXiv",
+        href: "https://arxiv.org/abs/2607.00572",
+      },
+    ],
+    tone: "pine",
+  },
+  {
+    title:
+      "SteerPrint: Steering-Vector-Guided Fingerprints for Black-Box LVLM Ownership Verification",
+    authors:
+      "Qianli Ma, Jiahao Chen, Hao Wu, Shei Pern Chua, Yueqi Xie, Fangzhao Wu",
+    venue: "ACL ARR",
+    year: "2026",
+    summary:
+      "A representation-driven framework that turns internal steering directions into visual fingerprints for black-box LVLM ownership verification.",
+    links: [
+      {
+        label: "OpenReview",
+        href: "https://openreview.net/forum?id=rGIJ51NlbM#discussion",
+      },
+    ],
+    tone: "stone",
+  },
   {
     title:
       "Progressively Injecting Structural Semantics from the Frequency Domain into Mamba for Accurate Curvilinear Structure Segmentation",
@@ -146,8 +180,7 @@ export const education: Education[] = [
     period: "Sep 2023 - Jun 2027",
     details: [
       "GPA: 4.08 / 4.8, ranked 6 / 124.",
-      "Coursework includes programming languages, Java, Python, and software engineering.",
-      "Lead of a student studio responsible for developing and maintaining university information systems.",
+      "Lead of Herald Studio",
     ],
   },
 ];
@@ -182,6 +215,7 @@ export const projects: Project[] = [
     description:
       "Designed the system architecture, REST APIs, appointment workflows, and consultation management modules.",
     stack: "Spring Boot, REST API",
+    href: "https://psy.seu.edu.cn",
   },
   {
     title: "Enterprise Knowledge Base and AI Agent",

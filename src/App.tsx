@@ -1,4 +1,5 @@
 import {
+  ArrowUpRight,
   BookOpenText,
   Briefcase,
   GraduationCap,
@@ -40,6 +41,12 @@ function App() {
             </p>
             <div className="focus-grid" aria-label="Research interests">
               <div>
+                <img
+                  className="focus-illustration"
+                  src="/ai-safety-plot.png"
+                  alt=""
+                  aria-hidden="true"
+                />
                 <strong>AI Safety</strong>
                 <span>Understanding and improving reliable model behavior.</span>
               </div>
@@ -128,7 +135,16 @@ function App() {
               {projects.map((project, index) => (
                 <article key={project.title} className={`project-card project-${index + 1}`}>
                   <div className="project-header">
-                    <h3>{project.title}</h3>
+                    <h3>
+                      {project.href ? (
+                        <a href={project.href} target="_blank" rel="noreferrer">
+                          {project.title}
+                          <ArrowUpRight size={16} weight="bold" aria-hidden="true" />
+                        </a>
+                      ) : (
+                        project.title
+                      )}
+                    </h3>
                     <time>{project.period}</time>
                   </div>
                   <p className="project-role">{project.role}</p>

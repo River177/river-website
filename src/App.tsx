@@ -43,7 +43,7 @@ function App() {
               <div>
                 <img
                   className="focus-illustration"
-                  src="/ai-safety-plot.png"
+                  src="/ai-safety-illustration.webp"
                   alt=""
                   aria-hidden="true"
                 />

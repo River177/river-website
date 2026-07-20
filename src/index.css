@@ -656,6 +656,19 @@ a {
   color: var(--accent);
 }
 
+.education-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  color: inherit;
+  font-weight: 620;
+}
+
+.education-link svg {
+  flex: none;
+  transform: translateY(2px);
+}
+
 .experience-list {
   display: grid;
   gap: 28px;

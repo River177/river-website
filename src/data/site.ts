@@ -38,7 +38,10 @@ export type Education = {
   institution: string;
   degree: string;
   period: string;
-  details: string[];
+  details: Array<{
+    text: string;
+    href?: string;
+  }>;
 };
 
 export type Experience = {
@@ -179,8 +182,8 @@ export const education: Education[] = [
     degree: "B.Eng. in Software Engineering",
     period: "Sep 2023 - Jun 2027",
     details: [
-      "GPA: 4.08 / 4.8, ranked 6 / 124.",
-      "Lead of Herald Studio",
+      { text: "GPA: 4.08 / 4.8, ranked 6 / 124." },
+      { text: "Lead of Herald Studio", href: "https://myseu.cn" },
     ],
   },
 ];

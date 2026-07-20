@@ -96,7 +96,21 @@ function App() {
                   </div>
                   <ul>
                     {item.details.map((detail) => (
-                      <li key={detail}>{detail}</li>
+                      <li key={detail.text}>
+                        {detail.href ? (
+                          <a
+                            className="education-link"
+                            href={detail.href}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {detail.text}
+                            <ArrowUpRight size={15} weight="bold" aria-hidden="true" />
+                          </a>
+                        ) : (
+                          detail.text
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </article>

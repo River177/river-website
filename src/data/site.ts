@@ -195,8 +195,8 @@ export const experiences: Experience[] = [
     period: "May 2026 - Present",
     location: "Beijing, China",
     details: [
-      "Conducting research on AI safety, responsible language models, and LLM copyright.",
-      "Studying reliable model behavior and the effects of post-training interventions.",
+      "Investigating how post-training interventions reshape safety behavior in large language models, with an emphasis on robustness and reliable alignment.",
+      "Exploring responsible LLM development, model provenance, and copyright questions across modern AI systems.",
     ],
   },
   {
@@ -204,8 +204,8 @@ export const experiences: Experience[] = [
     role: "AI and Web Development Intern",
     period: "Feb 2026 - Apr 2026",
     details: [
-      "Developed and improved an engineering productivity platform for automated workflows.",
-      "Built Android UI automation with MCP and LangChain, then packaged Midscene workflows in Electron.",
+      "Engineered core capabilities for an internal developer productivity platform, streamlining repetitive workflows through intelligent automation.",
+      "Built an Android UI automation stack with MCP and LangChain, then delivered reusable Midscene workflows through an Electron-based desktop experience.",
     ],
   },
 ];
@@ -216,7 +216,7 @@ export const projects: Project[] = [
     role: "Project Lead and Backend Developer",
     period: "Jul 2025 - Dec 2025",
     description:
-      "Designed the system architecture, REST APIs, appointment workflows, and consultation management modules.",
+      "Led the backend architecture for a university counseling platform, translating appointment and consultation workflows into reliable Spring Boot services and REST APIs.",
     stack: "Spring Boot, REST API",
     href: "https://psy.seu.edu.cn",
   },
@@ -225,7 +225,7 @@ export const projects: Project[] = [
     role: "AI Engineer",
     period: "Apr 2025 - Jul 2025",
     description:
-      "Cleaned and vectorized enterprise data, improved retrieval with RAG, and automated business workflows with Dify agents.",
+      "Built a retrieval-augmented knowledge system from raw enterprise data, combining vector search and Dify agents to deliver grounded answers and automate business workflows.",
     stack: "RAG, vector search, Dify",
   },
   {
@@ -233,7 +233,7 @@ export const projects: Project[] = [
     role: "Frontend Developer",
     period: "Aug 2024 - Oct 2024",
     description:
-      "Built reusable Vue interfaces for conversation records, information management, and structured student support workflows.",
+      "Designed a reusable Vue interface system for student support operations, unifying conversation records, information management, and structured case workflows.",
     stack: "Vue, component systems",
   },
 ];
